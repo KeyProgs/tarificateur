@@ -213,9 +213,9 @@ Route::post('/profile-modification', 'UtilisateurController@modificationProfile'
 Route::get('/myconnexion', 'GlobaleController@myconnexion')->name('myconnexion');
 
 //nouvelle fiche form
-Route::get('/fiches/nouvelle-fiche', 'UtilisateurController@nouvelleFicheForm')->name('nouvelle-fiche-form');
+Route::get('/fiches/UtilisateurController', 'UtilisateurController@nouvelleFicheForm')->name('nouvelle-fiche-form');
 //nouvelle fiche form predictif
-Route::post('/fiches/nouvelle-fiche', 'UtilisateurController@nouvelleFicheForm')->name('nouvelle-fiche-form-predicfif');
+Route::get('/fiches/nouvelle-fiche', 'UtilisateurController@nouvelleFicheForm')->name('nouvelle-fiche-form-predicfif');
 //nouvelle fiche via ajax
 Route::post('/ajout-fiche-ajax', 'UtilisateurController@nouvelleFiche');
 

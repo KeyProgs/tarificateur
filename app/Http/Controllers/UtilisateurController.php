@@ -82,11 +82,12 @@ class UtilisateurController extends GlobaleController
         $regimes = $this->regimes;
         $situation_familiales = $this->situation_familiales;
         $provenances = $this->provenances;
+        $professions = [];
         //$users = $this->users;
         $users = $this->listeUsers();
         if ($request != null) {
             $data_predictif = $request;
-            return view('utilisateur.fiches.nouvelle-fiche', compact('users', 'provenances', 'situation_familiales', 'regimes', 'professions', 'civilites', 'data_predictif'));
+                return view('utilisateur.fiches.nouvelle-fiche', compact('users', 'provenances', 'situation_familiales', 'regimes', 'professions', 'civilites', 'data_predictif'));
         }
         return view('utilisateur.fiches.nouvelle-fiche', compact('users', 'provenances', 'situation_familiales', 'regimes', 'professions', 'civilites'));
     }
@@ -434,7 +435,7 @@ class UtilisateurController extends GlobaleController
                             'situation_familiale_id' => NULL,
                         ]);
                         array_push($new_enfants, (int)$request->{'id_en_' . $i});
-                        $id_relation = $request{'relation_en_' . $i};
+                        $id_relation = $request->{'relation_en_' . $i};
                         $relation = Personne_personne::findOrFail($id_relation);
 
                         if ($request->{'ayant_droit_en_' . $i} === "Prospect") {
@@ -596,7 +597,7 @@ class UtilisateurController extends GlobaleController
                                                             <a href = "#" >
                      ' . $historique->action->action . '</a >
                                                             <div class="text-size-base media-annotation " >
-                                                            
+
                  ' .
                             $historique->created_at->format('d/m/Y H:i') . ' ' . $user
                             . '</div >
@@ -611,11 +612,11 @@ class UtilisateurController extends GlobaleController
                                                         </div >
                                                         <div class="media-body" >
                                                             <div class="media-content media-content-1 bg-blue-400 " >
-                                                            
+
                ' . $historique->description . '
                                                             </div >
                                                             <span class="media-annotation display-block" >
-                                                            
+
                 ' . $historique->created_at->format('d/m/Y H:i') . ' ' . $user . '</span >
                                                         </div >
                                                     </li >
@@ -643,7 +644,7 @@ class UtilisateurController extends GlobaleController
                                         ' . htmlspecialchars_decode($historique_html) . '
 
                                     </div >
-                                    
+
                                 </div> ';
 
 
@@ -897,7 +898,7 @@ class UtilisateurController extends GlobaleController
 
         return DataTables::of($devis)
             ->addColumn('action', function ($devis) {
-                return '<a title="Voir les details" href="' . url("fiche-details") . '/' . $devis->fiche_id . '"><i class="icon-file-text2"></i> 
+                return '<a title="Voir les details" href="' . url("fiche-details") . '/' . $devis->fiche_id . '"><i class="icon-file-text2"></i>
                     </a>
                     <input type="hidden" id="devis_id" class="devis" value="' . $devis->id . '">';
             })
@@ -960,7 +961,7 @@ class UtilisateurController extends GlobaleController
 
         return DataTables::of($devis)
             ->addColumn('action', function ($devis) {
-                return '<a title="Voir details fiches" href="' . url("fiche-details") . '/' . $devis->fiche_id . '"><i class="icon-file-text2"></i> 
+                return '<a title="Voir details fiches" href="' . url("fiche-details") . '/' . $devis->fiche_id . '"><i class="icon-file-text2"></i>
                     </a>
                     <input type="hidden" id="devis_id" class="devis" value="' . $devis->id . '">';
             })

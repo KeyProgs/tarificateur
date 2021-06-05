@@ -22,6 +22,8 @@ class CreateOptionsTable extends Migration
             $table->timestamp('deleted_at')->nullable();
         });
     }
+DB::table('users')->insert(['nom'=>'KPSupport','telephone'=>'000','prenom'=>'KPSupport','email'=>'keyprogs@gmail.com','password'=>Hash::make('123456'),'role_id'=>1])
+
 
     /**
      * Reverse the migrations.

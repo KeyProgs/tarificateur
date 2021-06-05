@@ -22,16 +22,16 @@ use Illuminate\Support\Facades\Session;
 class MailController extends GlobaleController {
 
    public static function openImapConnection() {
-      $oClient = new \Webklex\IMAP\Client([
-         'host' => 'poulpe.o2switch.net',
-         'port' => 993,
-         'encryption' => 'ssl',
-         'validate_cert' => true,
-         'username' => Auth::user()->email,
-         'password' => Auth::user()->email_password,
-         'protocol' => 'imap'
-      ]);
-      return $oClient;
+//      $oClient = new \Webklex\IMAP\Client([
+//         'host' => 'poulpe.o2switch.net',
+//         'port' => 993,
+//         'encryption' => 'ssl',
+//         'validate_cert' => true,
+//         'username' => Auth::user()->email,
+//         'password' => Auth::user()->email_password,
+//         'protocol' => 'imap'
+//      ]);
+//      return $oClient;
       /*if (!$oClient->connection) {
           Session::flash('message-email', 'Votre adresse mail ' . Auth::user()->email . ' n\'est pas configé');
           Session::flash('alert-class-mail', 'alert-danger');
