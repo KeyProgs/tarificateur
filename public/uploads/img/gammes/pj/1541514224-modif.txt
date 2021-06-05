@@ -1,0 +1,14 @@
+C:\xampp\htdocs\acs_crm\app\Http\Controllers\AdminController.php//
+C:\xampp\htdocs\acs_crm\resources\views\admin\equipes\details-utilisateur.blade.php
+C:\xampp\htdocs\acs_crm\public\js\main.js
+C:\xampp\htdocs\acs_crm\public\js\fiches\fiche.js
+
+C:\xampp\htdocs\acs_crm\public\css\core.min.css //
+C:\xampp\htdocs\acs_crm\public\css\bootstrap.min.css//
+C:\xampp\htdocs\acs_crm\public\css\core.css//
+
+C:\xampp\htdocs\acs_crm\app\Http\Controllers\UtilisateurController.php//
+
+C:\xampp\htdocs\acs_crm\resources\views\utilisateur\fiches\nouvelle-fiche.blade.php//
+C:\xampp\htdocs\acs_crm\resources\views\utilisateur\fiches\details-fiche.blade.php//
+

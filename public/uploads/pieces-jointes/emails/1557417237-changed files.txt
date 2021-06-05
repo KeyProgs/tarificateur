@@ -1,0 +1,23 @@
+========= acsassurance.com
+C:\xampp\htdocs\acsassurance\resources\views\includes\articles\single-article-include-index.blade.php
+C:\xampp\htdocs\acsassurance\resources\views\includes\articles\single-article-include-index2.blade.php
+C:\xampp\htdocs\acsassurance\resources\views\articles\article-details.blade.php
+C:\xampp\htdocs\acsassurance\routes\web.php
+C:\xampp\htdocs\acsassurance\app\Article.php
+
+========= crm
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\routes\web.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\resources\views\admin\tableau-bord.blade.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\public\js\fiches\fiche.js
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\app\Http\Controllers\GlobaleController.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\app\Http\Controllers\AdminController.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\app\Http\Controllers\DevisController.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\app\Devis.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\resources\views\includes\tarificateur\tarificateur-modal.blade.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\resources\views\includes\tarificateur\contrat-modal.blade.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\resources\views\includes\tarificateur\compagnie-gamme-formule.blade.php
+<57d8937f-20e3-410d-a4a1-57e3066c5822>\resources\views\admin\tableau-bord.blade.php
+
+
+
+
