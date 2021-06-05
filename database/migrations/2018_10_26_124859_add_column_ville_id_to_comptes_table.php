@@ -12,6 +12,7 @@ class AddColumnVilleIdToComptesTable extends Migration {
     */
    public function up() {
       Schema::table('comptes', function(Blueprint $table) {
+         $table->string('adresse')->nullable();
          $table->integer('ville_id')->unsigned()->after('adresse');
          $table->foreign('ville_id')->references('id')->on('villes');
       });

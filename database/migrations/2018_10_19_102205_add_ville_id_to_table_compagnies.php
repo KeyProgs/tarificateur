@@ -12,6 +12,7 @@ class AddVilleIdToTableCompagnies extends Migration {
     */
    public function up() {
       Schema::table('compagnies', function(Blueprint $table) {
+         $table->string('adresse2')->nullable();
          $table->integer('ville_id')->unsigned()->after('adresse2')->nullable();
          $table->foreign('ville_id')->references('id')->on('villes');
       });

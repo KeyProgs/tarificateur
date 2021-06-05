@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddColumnModeIdToDevisTable extends Migration
+
+class CreateOptionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +14,12 @@ class AddColumnModeIdToDevisTable extends Migration
      */
     public function up()
     {
-        Schema::table('devis', function (Blueprint $table) {
-           $table->integer('etat_devis_id')->unsigned();
-           $table->integer('mode_id')->unsigned()->after('etat_devis_id');
-           $table->foreign('mode_id')->references('id')->on('mode_paiements');
+        Schema::create('options', function(Blueprint $table) {
+            $table->increments('id');
+            $table->string('option')->nullable();
+
+            $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
@@ -27,7 +30,7 @@ class AddColumnModeIdToDevisTable extends Migration
      */
     public function down()
     {
-        Schema::table('devis', function (Blueprint $table) {
+        Schema::table('options', function (Blueprint $table) {
             //
         });
     }

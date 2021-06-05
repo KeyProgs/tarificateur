@@ -28,7 +28,7 @@ class CreateFichesTable extends Migration {
          $table->foreign('etat_id')->references('id')->on('fiche_etats');
 
          $table->integer('sous_etat_id')->unsigned();
-         $table->foreign('sous_etat_id')->references('id')->on('fiche_sous_etats');
+//         $table->foreign('sous_etat_id')->references('id')->on('fiche_sous_etats');
 
          $table->integer('personne_id')->unsigned();
          $table->foreign('personne_id')->references('id')->on('personnes');

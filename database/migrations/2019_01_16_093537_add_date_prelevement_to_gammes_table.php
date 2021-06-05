@@ -12,6 +12,7 @@ class AddDatePrelevementToGammesTable extends Migration {
     */
    public function up() {
       Schema::table('gammes', function(Blueprint $table) {
+         $table->string('annee', 4)->nullable();
          $table->string('date_prelevement', 150)->nullable()->after('annee');
       });
    }

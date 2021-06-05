@@ -15,7 +15,7 @@ class CreateActionsTable extends Migration {
          $table->increments('id');
          $table->string('action');
          $table->integer('type_action_id')->unsigned();
-         $table->foreign('type_action_id')->references('id')->on('type_actions');
+//         $table->foreign('type_action_id')->references('id')->on('type_actions');
          $table->timestamps();
          $table->timestamp('deleted_at')->nullable();
       });

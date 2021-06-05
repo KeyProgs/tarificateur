@@ -13,7 +13,7 @@ class CreateFicheEtatsTable extends Migration {
    public function up() {
       Schema::create('fiche_etats', function(Blueprint $table) {
          $table->increments('id');
-         $table->integer('etat_groupe_id')->unsigned()->after('id');
+         $table->integer('etat_groupe_id')->unsigned();
          $table->foreign('etat_groupe_id')->references('id')->on('etat_groupes');
          $table->string('valeur');
          $table->string('libelle');
